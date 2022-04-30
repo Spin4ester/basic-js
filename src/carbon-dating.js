@@ -18,8 +18,15 @@ const HALF_LIFE_PERIOD = 5730;
  *
  */
 function dateSample(/* sampleActivity */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+  
+//   The activity of a sample is directly proportional to the number of atoms of the radioactive isotope in the sample:
+
+// A=kN(5)
+
+
+
+
 }
 
 module.exports = {
