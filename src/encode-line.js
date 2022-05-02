@@ -19,8 +19,7 @@ const { NotImplementedError } = require('../extensions/index.js');
       i++;
     }
     result = result + count + str[i];
-  }
-  
+  } 
    return result.replace(/1/g,'')
    
 }

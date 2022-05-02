@@ -31,7 +31,7 @@ function renameFiles(arr) {
         counter = 1;
     }
     });
-return arr
+return newArr;
 }
 
 

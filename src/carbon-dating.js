@@ -17,15 +17,17 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample(/* sampleActivity */) {
-
+function dateSample(sampleActivity) { 
+  
+    if (typeof sampleActivity == 'string' && Number(sampleActivity) > 0 && Number(sampleActivity) < MODERN_ACTIVITY) {
+      return Math.ceil(Math.log(MODERN_ACTIVITY / sampleActivity) / (0.693 / HALF_LIFE_PERIOD));
+    } else {
+      return false;
+    }
   
 //   The activity of a sample is directly proportional to the number of atoms of the radioactive isotope in the sample:
 
 // A=kN(5)
-
-
-
 
 }
 
